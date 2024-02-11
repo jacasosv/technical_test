@@ -15,7 +15,7 @@
                     </div>
                 </div>
 
-                <form method="POST" action="{{ url('book')}}" accept-charset="UTF-8" autocomplete="off">
+                <form method="POST" action="{{ route("book.store") }}" accept-charset="UTF-8" autocomplete="off">
                     @csrf
                     <div class="card" style="background-color: white">
                         <div class="card-header">

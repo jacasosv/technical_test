@@ -45,7 +45,9 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown1" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ __("header.language") }} ( {{ LaravelLocalization::getCurrentLocale() }} )
+                                {{ __("header.language") }}
+                                <img src="{{ asset("images/flags/".LaravelLocalization::getCurrentLocale().".png") }}"  />
+                                ( {{ LaravelLocalization::getCurrentLocale() }} )
                             </a>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
 
